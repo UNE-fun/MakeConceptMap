@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+	<head>
+	  <title>キットビルド方式の概念マップ</title>
+	  <link rel="stylesheet" type="text/css" href="css/show.css">
+	</head>
+
+	<body>
+	  <div class="functionMenu" id="functionMenu">
+			<div class = "menuCommand">
+				<div class = "CommandButton">
+			    番号：<input id="status" type="text" style="width:50px;" value="">
+			    <label onclick="reloadData();">load</label>
+			  </div><!--//load-->
+		  </div>
+		  <br/>
+			<div class = "menuCommand">
+				<div class = "CommandButton">
+					語句：<input id="txt" type="text" value=""><br/>
+					<label class="locked" onclick="addText();">add node</label>
+				</div>
+			</div><!--menuCommand about Node -->
+		  <br/>
+			<div class="menuCommand">
+			    <div class ="CommandButton">
+                                        関係：<input id="linkText" type="text" value=""><br/>
+					<label id="addLinkButton" onclick="addLinkObject();">add link</label><br/>
+					<label id="addLinkButton" onclick="eraseLink();">erase link</label>
+			    </div>
+			</div><!--menuCommand about Link-->
+	  </div><!--//functionMenu-->
+
+		<div class="wrapper" id="wrapper">
+			<canvas class="mapArea" id="mapArea" width="1400px" height="800px"></canvas>
+		</div><!--wrapper-->
+	</body>
+	<script src="js/mapMaker.js"></script>
+</html>

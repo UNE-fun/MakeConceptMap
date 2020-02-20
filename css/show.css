@@ -1,0 +1,60 @@
+.functionMenu{
+  border: solid 2px red;
+  box-sizing: border-box;
+  font-size: 12px;
+  --main-MenuWidth: 250px;
+  float: left;
+  width: var(--main-MenuWidth);
+  height: 100%;
+}
+
+.wrapper{
+  margin-left: 250px;
+  overflow: scroll;
+  width: calc(100%-250px);
+  height: 100%;
+}
+
+
+/*ボックス全体*/
+.menuCommand {
+    margin: 2em 0;
+    padding: 0;
+    max-width: var(--mainMenuWidth);/*最大幅*/
+}
+
+.CommandButton{
+  /*わからなくなった時に表示すると、囲み線が出てくる*/
+  /*border: solid 1px;*/
+  margin: 1em;
+  padding: 0;
+}
+
+/*ラベル*/
+.menuCommand label{
+    display: block;
+    margin: 1.5px 0;
+    padding : 11px 12px;
+    transition: all 0.5s;
+    border: solid 2px;
+    border-color:#2f8fcf;
+}
+
+/*ラベルホバー時*/
+.menuCommand label:hover {
+    background :#85baef;
+}
+
+/*コマンドボタン周り*/
+.menuCommand #add, #fixNode{
+  display: block;
+  margin: 1.5px 0;
+  padding : 11px 12px;
+  transition: all 0.5s;
+  border: solid 2px;
+  background-color: white;
+}
+
+.menuCommand #add:hover, #fixNode:hover {
+    background :#85baef;
+}
